@@ -37,7 +37,7 @@ int main()
     } while ((typeFail == true) || (starting_speed < 0.0));
     cout << "Starting speed = " << starting_speed << "\n";
 
-    angle = (angle * PI) / 180.0; //ïåðåâîäèì ãðàäóñû â ðàäèàíû, ò.ê. ôóíêöèÿ sin ïðèíèìàåò çíà÷åíèå óãëà â ðàäèàíàõ//
+    angle = (angle * PI) / 180.0; //переводим градусы в радианы, т.к. функция sin принимает значение угла в радианах//
     const float g = 9.8;
     const float range_of_flight = abs((starting_speed * starting_speed * sin(2*angle)) / g);
 
